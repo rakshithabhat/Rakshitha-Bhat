@@ -13,7 +13,7 @@ Bengaluru, India
 Python · SQL · Power BI · scikit-learn · Statistics · ML
 
 ## Projects
-- Sales Forecasting Model (Python, scikit-learn)
+- Sales Data Analysis & Forecasting Project (Python, Pandas, scikit-learn)
 - Ad Campaign Analytics (Pandas, Power BI)
 - Quantum Circuit Demo (Qiskit) — coming soon
 
