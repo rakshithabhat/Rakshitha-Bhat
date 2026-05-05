@@ -17,5 +17,3 @@ Python · SQL · Power BI · scikit-learn · Statistics · ML
 - Ad Campaign Analytics (Pandas, Power BI)
 - Quantum Circuit Demo (Qiskit) — coming soon
 
-## Contact
-LinkedIn: https://www.linkedin.com/feed/ | Portfolio: 
