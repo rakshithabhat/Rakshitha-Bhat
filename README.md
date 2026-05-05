@@ -7,7 +7,6 @@ Bengaluru, India
 - Data Science with AI
 - Machine Learning with AI
 - IBM Data Science Professional Certificate (in progress)
-- IBM Quantum Computing (in progress)
 - 7 years mathematics teaching experience
 
 ## Skills
