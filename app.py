@@ -13,6 +13,7 @@ if os.path.exists(FILE):
 else:
     df = pd.DataFrame(columns=["name", "score"])
 
+# Session state
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
 if "user" not in st.session_state:
@@ -20,6 +21,7 @@ if "user" not in st.session_state:
 if "role" not in st.session_state:
     st.session_state.role = ""
 
+# Login
 if not st.session_state.logged_in:
     st.title("🔐 Login - TrigLearn")
 
@@ -35,6 +37,7 @@ if not st.session_state.logged_in:
         else:
             st.warning("Enter valid name")
 
+# Main App
 else:
     st.title("📐 TrigLearn")
 
@@ -46,6 +49,7 @@ else:
         st.session_state.role = ""
         st.rerun()
 
+    # STUDENT
     if st.session_state.role == "Student":
 
         page = st.sidebar.radio("Navigate", ["Learn", "Quiz", "Applications", "My Analytics"])
@@ -67,11 +71,16 @@ else:
             q5 = st.radio("5. cos(90°)?", ["0", "1", "-1"])
 
             if st.button("Submit Quiz"):
-                if q1 == "1": score += 1
-                if q2 == "1": score += 1
-                if q3 == "1": score += 1
-                if q4 == "0": score += 1
-                if q5 == "0": score += 1
+                if q1 == "1":
+                    score += 1
+                if q2 == "1":
+                    score += 1
+                if q3 == "1":
+                    score += 1
+                if q4 == "0":
+                    score += 1
+                if q5 == "0":
+                    score += 1
 
                 st.success(f"Score: {score}/5")
 
@@ -108,12 +117,12 @@ else:
             else:
                 st.info("No attempts yet")
 
+    # TEACHER
     elif st.session_state.role == "Teacher":
 
         st.header("👩‍🏫 Teacher Dashboard")
 
         if len(df) > 0:
-
             st.subheader("All Student Records")
             st.dataframe(df)
 
@@ -130,12 +139,5 @@ else:
             ax.set_ylabel("Average Score")
 
             st.pyplot(fig)
-
         else:
             st.info("No student data available")
-            st.subheader("Overall Performance")
-
-            st.metric("Total Attempts", len(df))
-            st.metric("Overall Avg", f"{df['score'].mean():.2f}")
-        else:
-            st.info("No data available")
