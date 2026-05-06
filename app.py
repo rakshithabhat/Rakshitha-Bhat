@@ -4,8 +4,13 @@ import matplotlib.pyplot as plt
 
 st.title("📐 Trigonometry Learning App")
 
-topic = st.selectbox("Select Topic", ["Ratios", "Graphs", "Applications"])
+# Initialize session state for score history
+if "scores" not in st.session_state:
+    st.session_state.scores = []
 
+topic = st.selectbox("Select Topic", ["Ratios", "Graphs", "Applications", "Analytics"])
+
+# ------------------ RATIOS ------------------
 if topic == "Ratios":
     st.write("sinθ = Opp/Hyp, cosθ = Adj/Hyp, tanθ = Opp/Adj")
 
@@ -33,9 +38,13 @@ if topic == "Ratios":
 
         st.success(f"Your Score: {score}/5")
 
+        # Save score
+        st.session_state.scores.append(score)
+
         if score == 5:
             st.balloons()
 
+# ------------------ GRAPHS ------------------
 elif topic == "Graphs":
     st.header("Graph of sin(x)")
 
@@ -48,9 +57,41 @@ elif topic == "Graphs":
 
     st.pyplot(fig)
 
+# ------------------ APPLICATIONS ------------------
 elif topic == "Applications":
     st.header("Height and Distance")
 
+    d = st.number_input("Distance from building (meters):", min_value=0.0)
+    angle = st.slider("Angle of elevation (degrees):", 1, 90)
+
+    if st.button("Calculate Height"):
+        h = d * np.tan(np.radians(angle))
+        st.success(f"Estimated Height: {h:.2f} meters")
+
+# ------------------ ANALYTICS ------------------
+elif topic == "Analytics":
+    st.header("📊 Performance Analytics")
+
+    if len(st.session_state.scores) > 0:
+        scores = st.session_state.scores
+
+        st.write(f"Total Attempts: {len(scores)}")
+        st.write(f"Average Score: {sum(scores)/len(scores):.2f}")
+
+        fig, ax = plt.subplots()
+        ax.plot(scores, marker='o')
+        ax.set_title("Score Progress")
+        ax.set_xlabel("Attempt")
+        ax.set_ylabel("Score")
+
+        st.pyplot(fig)
+
+        if scores[-1] < 3:
+            st.warning("You need more practice on basics!")
+        else:
+            st.success("Good performance! Keep going!")
+    else:
+        st.info("No quiz attempts yet.")
     d = st.number_input("Distance from building (meters):", min_value=0.0)
     angle = st.slider("Angle of elevation (degrees):", 1, 90)
 
