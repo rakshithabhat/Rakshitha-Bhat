@@ -15,6 +15,3 @@ Python · SQL · Power BI · scikit-learn · Statistics · ML
 ## Projects
 - Sales Data Analysis & Forecasting Project (Python, Pandas, scikit-learn)
 - Ad Campaign Analytics (Pandas, Power BI)
-
-## Contact
-LinkedIn: https://www.linkedin.com/in/rakshitha-bhat-r-329b08322/
