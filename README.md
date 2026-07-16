@@ -13,4 +13,8 @@ Prior IT Specialist experience
 · SQL · Power BI · scikit-learn · Statistics · ML · Python (pandas, scipy) · Excel  · data visualization
 
 ## Projects
--Ad Campaign Performance Analysis — Interactive dashboard analyzing Amazon Ads performance across campaign types, with real statistical testing (ANOVA, Pearson correlation) behind the results.
+# Ad Campaign Performance Analysis
+
+**Live demo: [rakshithabhat.github.io/ad-campaign-performance-analysis/ad_campaign_dashboard.html](https://rakshithabhat.github.io/ad-campaign-performance-analysis/ad_campaign_dashboard.html)**
+
+An interactive, single-page dashboard analyzing Amazon Ads performance across three campaign types, built to answer one question: **which campaign type delivers the best return on spend — and is the difference statistically real, or just noise?**
