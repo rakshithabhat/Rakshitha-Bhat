@@ -3,15 +3,14 @@ MSc Mathematics | Data Scientist | Quantitative Analyst
 Bengaluru, India
 
 ## About me
-- MSc Mathematics, Bengaluru City University (2025)
-- Data Science with AI
-- Machine Learning with AI
-- IBM Data Science Professional Certificate (in progress)
-- 7 years mathematics teaching experience
+- M.Sc. Mathematics, Bengaluru City University (2023–2025)
+B.Sc. Physics, Chemistry, Mathematics (PCM), BMSCW (2019–2022)
+Certification in Data Science with AI and Machine Learning with AI
+7+ years of independent mathematics tutoring experience
+Prior IT Specialist experience 
 
 ## Skills
-Python · SQL · Power BI · scikit-learn · Statistics · ML
+· SQL · Power BI · scikit-learn · Statistics · ML · Python (pandas, scipy) · Excel  · data visualization
 
 ## Projects
-- Sales Data Analysis & Forecasting Project (Python, Pandas, scikit-learn)
-- Ad Campaign Analytics (Pandas, Power BI)
+-Ad Campaign Performance Analysis — Interactive dashboard analyzing Amazon Ads performance across campaign types, with real statistical testing (ANOVA, Pearson correlation) behind the results.
