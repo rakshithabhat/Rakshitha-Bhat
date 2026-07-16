@@ -15,6 +15,6 @@ Prior IT Specialist experience
 ## Projects
 # Ad Campaign Performance Analysis
 
-**Live demo: [rakshithabhat.github.io/ad-campaign-performance-analysis/ad_campaign_dashboard.html](https://rakshithabhat.github.io/ad-campaign-performance-analysis/ad_campaign_dashboard.html)**
+**Live demo:  https://rakshithabhat.github.io/ad-campaign-performance-analysis/**
 
 An interactive, single-page dashboard analyzing Amazon Ads performance across three campaign types, built to answer one question: **which campaign type delivers the best return on spend — and is the difference statistically real, or just noise?**
